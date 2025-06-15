@@ -1,0 +1,141 @@
+.app-header {
+	display: flex;
+	border-bottom: 1px solid var(--separator-color);
+	justify-content: space-between;
+	font-weight: var(--text-weight-400);
+	font-size: var(--font-size-sm);
+	line-height: 18px;
+}
+
+.app-nav {
+	display: flex;
+	height: 52px;
+}
+
+.app-nav > ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	padding-left: 8px;
+	gap: 8px;
+}
+.logo-nav-item {
+	margin-right: 16px;
+}
+
+.logo-nav-item > a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-item {
+	padding: 18px 0;
+	position: relative;
+}
+
+.nav-item > a:hover {
+	font-weight: var(--text-weight-500);
+}
+
+.nav-item:hover::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 2px;
+	background-color: var(--color-red);
+}
+
+.beta-badge {
+	display: inline-block;
+	background-color: var(--color-red);
+	color: var(--background-color);
+	font-size: 10px;
+	font-weight: 700;
+	line-height: 14px;
+	padding: 2px;
+	border-radius: 4px;
+	margin-left: 2px;
+	letter-spacing: 2%;
+}
+
+.app-header-right {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.search-container {
+	position: relative;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.search-input {
+	width: 300px;
+	height: 34px;
+	padding: 12px 16px 12px 44px;
+	border: 1px solid #d1d5db;
+	font-size: var(--font-size-m);
+	outline: none;
+}
+
+.search-input:focus {
+	border-color: #3b82f6;
+}
+
+.search-input::placeholder {
+	color: #9ca3af;
+}
+
+.search-button {
+	position: absolute;
+	left: 2px;
+	top: 0;
+	background: none;
+	border: none;
+	padding: 8px;
+	cursor: pointer;
+	border-radius: 6px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.search-icon {
+	width: 16px;
+	height: 16px;
+}
+
+.account {
+	margin-left: 16px;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.user-badge {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 32px;
+	height: 32px;
+	border-radius: 4px;
+	background-color: var(--color-red);
+	color: var(--background-color);
+	font-size: var(--font-size-sm);
+	font-weight: var(--font-weight-500);
+}
+
+.account-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: baseline;
+}
+
+.email {
+	font-size: var(--font-size-xsm);
+}
