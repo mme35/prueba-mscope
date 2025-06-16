@@ -1,13 +1,8 @@
-.collapsible {
-	border: 1px solid var(--separator-color);
-	background: var(--background-color);
-}
-
 .collapsible-header {
 	width: 100%;
 	display: flex;
 	align-items: center;
-	padding: 16px;
+	padding: 16px 0;
 	gap: 8px;
 	background: none;
 	border: none;

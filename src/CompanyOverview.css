@@ -1,16 +1,11 @@
-.company-container {
-	border-bottom: 1px solid var(--separator-color);
-}
-
-.company {
+.company-overview {
 	display: flex;
 	justify-content: center;
-	max-width: var(--max-width);
 }
 
 .description {
+	padding: 16px 0;
 	flex: 2;
-	padding: 16px;
 }
 
 .description p {

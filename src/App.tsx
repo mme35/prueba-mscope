@@ -268,16 +268,18 @@ function App() {
 		<>
 			<Nav />
 			<main>
-				<CompanyOverview />
-				<Collapsible title="Income Statement" defaultOpen={true}>
-					<Table headers={headers} rows={rows} />
-				</Collapsible>
-				<Collapsible title="Balance Sheet">
-					<p>More content</p>
-				</Collapsible>
-				<Collapsible title="Cash Flow">
-					<p>More content</p>
-				</Collapsible>
+				<div className="separator">
+					<div className="container">
+						<CompanyOverview />
+					</div>
+				</div>
+				<div className="separator">
+					<div className="container">
+						<Collapsible title="Income Statement" defaultOpen={true}>
+							<Table headers={headers} rows={rows} />
+						</Collapsible>
+					</div>
+				</div>
 			</main>
 		</>
 	);

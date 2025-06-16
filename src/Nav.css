@@ -1,5 +1,4 @@
 .app-header {
-	border-bottom: 1px solid var(--separator-color);
 	font-weight: var(--text-weight-400);
 	font-size: var(--font-size-sm);
 }
@@ -8,7 +7,6 @@
 	display: flex;
 	max-width: var(--max-width);
 	justify-content: space-between;
-	padding: 0 16px;
 }
 
 .app-nav {
@@ -21,7 +19,6 @@
 	justify-content: center;
 	align-items: center;
 	list-style: none;
-
 	gap: 8px;
 }
 
