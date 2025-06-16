@@ -1,0 +1,162 @@
+.company-container {
+	border-bottom: 1px solid var(--separator-color);
+}
+
+.company {
+	display: flex;
+	justify-content: center;
+	max-width: var(--max-width);
+}
+
+.description {
+	flex: 2;
+	padding: 16px;
+}
+
+.description p {
+	color: var(--text-color-300);
+	font-weight: var(--text-weight-400);
+	font-size: var(--font-size-sm);
+	line-height: 18px;
+}
+
+.description-sector {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-top: 16px;
+	color: var(--text-color-200);
+}
+
+.description-sector-left > p,
+.description-sector-right > p {
+	font-weight: var(--text-weight-400);
+	font-size: var(--font-size-xsm);
+	color: var(--text-color-200);
+}
+
+.sector-badge {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	border-radius: 4px;
+	padding: 4px;
+	width: fit-content;
+	height: 26px;
+	background-color: #e2f0eb;
+}
+.sector-badge-label {
+	color: #209464;
+	font-weight: var(--text-weight-500);
+	display: inline-block;
+}
+
+.description-sector-right > p {
+	padding-left: 8px;
+}
+
+.likes {
+	display: flex;
+	gap: 8px;
+	border-left: 1px solid var(--separator-color);
+	padding-left: 8px;
+}
+
+.like-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 24px;
+	height: 24px;
+	border: none;
+	border-radius: 50%;
+	background-color: var(--separator-color);
+	cursor: pointer;
+	transition: all 0.2s ease;
+	position: relative;
+	outline: none;
+}
+
+.thumbs-icon {
+	width: 16px;
+	height: 16px;
+}
+
+.thumbs-down {
+	transform: rotate(180deg);
+}
+
+.description-contact {
+	margin-top: 16px;
+	color: var(--text-color-300);
+	font-weight: var(--text-weight-400);
+	font-size: var(--font-size-sm);
+}
+
+.description-contact-item {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.financials {
+	padding: 32px 16px;
+	flex: 1;
+	border-left: 1px solid var(--separator-color);
+}
+
+.score {
+	display: flex;
+	flex-direction: column;
+	margin-top: 16px;
+}
+
+.score-grade {
+	font-size: 52px;
+	color: #209464;
+	line-height: 56px;
+}
+
+.score-label {
+	font-weight: var(--text-weight-400);
+	font-size: var(--font-size-xsm);
+	color: var(--text-color-200);
+}
+
+.financials-data {
+	margin-top: 16px;
+	display: flex;
+	gap: 32px;
+}
+
+.financials-data-column {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.financials-data-item {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.financials-data-value {
+	font-size: 22px;
+	color: var(--text-color-500);
+	font-weight: var(--text-weight-500);
+	line-height: 26px;
+}
+
+.financials-data-label {
+	font-size: var(--font-size-xsm);
+	color: var(--text-color-200);
+	font-weight: var(--text-weight-400);
+	line-height: 15px;
+}
+
+.indicators {
+	padding: 32px 16px;
+	flex: 1;
+	border-left: 1px solid var(--separator-color);
+}

@@ -1,10 +1,14 @@
 .app-header {
-	display: flex;
 	border-bottom: 1px solid var(--separator-color);
-	justify-content: space-between;
 	font-weight: var(--text-weight-400);
 	font-size: var(--font-size-sm);
-	line-height: 18px;
+}
+
+.nav-container {
+	display: flex;
+	max-width: var(--max-width);
+	justify-content: space-between;
+	padding: 0 16px;
 }
 
 .app-nav {
@@ -17,9 +21,10 @@
 	justify-content: center;
 	align-items: center;
 	list-style: none;
-	padding-left: 8px;
+
 	gap: 8px;
 }
+
 .logo-nav-item {
 	margin-right: 16px;
 }
@@ -31,8 +36,13 @@
 }
 
 .nav-item {
-	padding: 18px 0;
+	padding: 16px 0;
 	position: relative;
+}
+
+.nav-item-badge {
+	display: flex;
+	align-items: center;
 }
 
 .nav-item > a:hover {
@@ -77,7 +87,7 @@
 .search-input {
 	width: 300px;
 	height: 34px;
-	padding: 12px 16px 12px 44px;
+	padding: 12px 16px 12px 32px;
 	border: 1px solid #d1d5db;
 	font-size: var(--font-size-m);
 	outline: none;
@@ -99,7 +109,6 @@
 	border: none;
 	padding: 8px;
 	cursor: pointer;
-	border-radius: 6px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -115,6 +124,10 @@
 	display: flex;
 	align-items: center;
 	gap: 8px;
+	background: none;
+	border: none;
+	text-align: start;
+	cursor: pointer;
 }
 
 .user-badge {
@@ -134,8 +147,15 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: baseline;
+	max-width: 120px;
 }
 
 .email {
 	font-size: var(--font-size-xsm);
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.header {
+	margin-bottom: 16px;
 }

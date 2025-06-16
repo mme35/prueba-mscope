@@ -14,19 +14,25 @@
 	line-height: 1.5;
 	font-weight: 400;
 
+	--max-width: 1280px;
 	--background-color: #fcfcfd;
 	--separator-color: #e6e6e6;
+	--separator-color-dark: #cccccc;
 
 	--color-red: #e91c11;
 
 	--text-color-500: #18181b;
+	--text-color-300: #626266;
+	--text-color-200: #8f8f91;
 
 	--text-weight-400: 400;
 	--text-weight-500: 500;
 
+	--font-size-xl: 1.75rem; /* 28px */
+	--font-size-lg: 1.125rem; /* 18px */
 	--font-size-m: 1rem; /* 16px */
 	--font-size-sm: 0.875rem; /* 14px */
-	--font-size-xsm: 11px;
+	--font-size-xsm: 0.75rem; /* 12px */
 
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
@@ -45,23 +51,21 @@ a {
 }
 
 .app-container {
-	/* Full height container */
 	min-height: 100vh;
 	min-height: 100dvh; /* Modern viewport height for mobile */
 
-	/* Center horizontally with max-width constraint */
-	max-width: 1280px;
 	margin: 0 auto;
 
-	/* Optional: Add some padding on smaller screens */
-	padding: 0 var(--space-md);
-
-	/* Make it a flex container for easy layout */
 	display: flex;
 	flex-direction: column;
 }
 
 h1 {
-	font-size: 3.2em;
-	line-height: 1.1;
+	font-size: var(--font-size-xl);
+	font-weight: var(--text-weight-500);
+}
+
+h2 {
+	font-size: var(--font-size-m);
+	font-weight: var(--text-weight-500);
 }
