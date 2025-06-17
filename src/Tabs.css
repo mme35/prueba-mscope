@@ -1,0 +1,38 @@
+.tabs-wrapper {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	bottom: 18px;
+	height: 0px;
+}
+
+.tabs {
+	height: fit-content;
+	background-color: var(--separator-color);
+	border-radius: 4px;
+}
+
+.tab-button {
+	height: 32px;
+	padding: 8px 16px;
+	border: none;
+	background-color: var(--separator-color);
+	cursor: pointer;
+	color: var(--text-color-300);
+}
+
+.tab-button-active {
+	padding: 7px 16px;
+	background-color: var(--background-color);
+	border: 1px solid #626266;
+	border-radius: 4px;
+	color: var(--text-color-500);
+	box-shadow: 0px 0px 4px 0px #1d1d1d40;
+}
+
+.tab-button:first-of-type:not(.tab-button-active) {
+	border-radius: 4px 0 0 4px;
+}
+.tab-button:last-of-type:not(.tab-button-active) {
+	border-radius: 0 4px 4px 0;
+}

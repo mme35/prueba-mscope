@@ -1,7 +1,9 @@
 import './App.css';
 import Nav from './Nav';
 import CompanyOverview from './CompanyOverview';
+import Tabs from './Tabs';
 import Collapsible from './Collapsible';
+import IncomeStatementGraphs from './IncomeStatementGraphs';
 import Table from './Table';
 
 const headers = [
@@ -263,6 +265,14 @@ const rows = [
 	},
 ];
 
+const tabList = [
+	{ id: 'summary', title: 'Summary', disabled: false },
+	{ id: 'financials', title: 'Financials', disabled: false },
+	{ id: 'peers', title: 'Peers', disabled: false },
+	{ id: 'companyInfo', title: 'Company info', disabled: false },
+	{ id: 'news', title: 'News and events', disabled: false },
+];
+
 function App() {
 	return (
 		<>
@@ -273,10 +283,30 @@ function App() {
 						<CompanyOverview />
 					</div>
 				</div>
-				<div className="separator">
+				<div className="separator relative">
+					<div className="container">
+						<Tabs tabList={tabList} defaultTab="financials" />
+					</div>
 					<div className="container">
 						<Collapsible title="Income Statement" defaultOpen={true}>
+							<div className="separator-red">
+								<IncomeStatementGraphs />
+							</div>
 							<Table headers={headers} rows={rows} />
+						</Collapsible>
+					</div>
+				</div>
+				<div className="separator">
+					<div className="container">
+						<Collapsible title="Balance Sheet">
+							<p>Placeholder content</p>
+						</Collapsible>
+					</div>
+				</div>
+				<div className="separator">
+					<div className="container">
+						<Collapsible title="Cashflow">
+							<p>Placeholder content</p>
 						</Collapsible>
 					</div>
 				</div>

@@ -9,6 +9,41 @@
 	padding: 0;
 }
 
+/* high/xl.medium company name
+font-family: Inter;
+font-weight: 500;
+font-size: 28px;
+line-height: 32px;
+letter-spacing: 0%; */
+
+/* high/xs.medium collapsible
+font-family: Inter;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+letter-spacing: 0%; */
+
+/* mid/l.medium table main
+font-family: Inter;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 0%; */
+
+/* mid/s.medium table normal
+font-family: Inter;
+font-weight: 500;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0%; */
+
+/* mid/mregular texto company name
+font-family: Inter;
+font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+letter-spacing: 0%; */
+
 :root {
 	font-family: 'Inter', sans-serif;
 	line-height: 1.5;
@@ -55,6 +90,10 @@ body {
 	border-bottom: 1px solid var(--separator-color);
 }
 
+.separator-red {
+	border-bottom: 1px solid red;
+}
+
 .container {
 	max-width: var(--max-width);
 	margin-left: auto;
@@ -62,8 +101,11 @@ body {
 	padding: 0 16px;
 }
 
+.relative {
+	position: relative;
+}
+
 a {
-	font-weight: 500;
 	color: inherit;
 	text-decoration: none;
 }
