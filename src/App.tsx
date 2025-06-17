@@ -1,5 +1,6 @@
 import './App.css';
 import Nav from './Nav';
+import Separator from './Separator';
 import CompanyOverview from './CompanyOverview';
 import Tabs from './Tabs';
 import Collapsible from './Collapsible';
@@ -278,38 +279,35 @@ function App() {
 		<>
 			<Nav />
 			<main>
-				<div className="separator">
-					<div className="container">
-						<CompanyOverview />
-					</div>
+				<div className="container">
+					<CompanyOverview />
 				</div>
-				<div className="separator relative">
-					<div className="container">
-						<Tabs tabList={tabList} defaultTab="financials" />
-					</div>
-					<div className="container">
-						<Collapsible title="Income Statement" defaultOpen={true}>
-							<div className="separator-red">
-								<IncomeStatementGraphs />
-							</div>
-							<Table headers={headers} rows={rows} />
-						</Collapsible>
-					</div>
+				<Separator />
+				<div className="container">
+					<Tabs tabList={tabList} defaultTab="financials" />
 				</div>
-				<div className="separator">
+				<Collapsible title="Income Statement" defaultOpen={true}>
 					<div className="container">
-						<Collapsible title="Balance Sheet">
-							<p>Placeholder content</p>
-						</Collapsible>
+						<IncomeStatementGraphs />
 					</div>
-				</div>
-				<div className="separator">
+					<Separator />
 					<div className="container">
-						<Collapsible title="Cashflow">
-							<p>Placeholder content</p>
-						</Collapsible>
+						<Table headers={headers} rows={rows} />
 					</div>
-				</div>
+				</Collapsible>
+				<Separator />
+				<Collapsible title="Balance Sheet">
+					<div className="container">
+						<p>Placeholder content</p>
+					</div>
+				</Collapsible>
+				<Separator />
+				<Collapsible title="Cashflow">
+					<div className="container">
+						<p>Placeholder content</p>
+					</div>
+				</Collapsible>
+				<Separator />
 			</main>
 		</>
 	);

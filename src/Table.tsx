@@ -1,5 +1,5 @@
 import './Table.css';
-
+import DownloadIcon from './assets/download-01_16px.svg?react';
 interface TableHeader {
 	id: string;
 	label: string;
@@ -19,7 +19,13 @@ interface TableProps {
 
 const Table: React.FC<TableProps> = ({ headers, rows = [] }) => {
 	return (
-		<div>
+		<div className="table-wrapper">
+			<div className="table-actions">
+				<button className="export-button">
+					<DownloadIcon className="download-icon" />
+					<span>Export</span>
+				</button>
+			</div>
 			<table className="table">
 				<thead>
 					<tr>

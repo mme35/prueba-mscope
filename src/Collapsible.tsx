@@ -18,12 +18,18 @@ const Collapsible = ({ title, children, defaultOpen = false, className = '' }: C
 
 	return (
 		<div className={`collapsible ${className}`}>
-			<button onClick={toggleOpen} className="collapsible-header" aria-expanded={isOpen}>
-				<div className="collapsible-icon">
-					{isOpen ? <Chevron className="chevron-icon chevron-up" /> : <Chevron className="chevron-icon" />}
-				</div>
-				<span className="collapsible-title">{title}</span>
-			</button>
+			<div className="container">
+				<button onClick={toggleOpen} className="collapsible-header" aria-expanded={isOpen}>
+					<div className="collapsible-icon">
+						{isOpen ? (
+							<Chevron className="chevron-icon chevron-up" />
+						) : (
+							<Chevron className="chevron-icon" />
+						)}
+					</div>
+					<span className="collapsible-title">{title}</span>
+				</button>
+			</div>
 
 			<div className={`collapsible-content ${isOpen ? 'open' : 'closed'}`}>
 				<div className="collapsible-inner">{children}</div>

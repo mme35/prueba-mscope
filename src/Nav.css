@@ -1,6 +1,7 @@
 .app-header {
 	font-weight: var(--text-weight-400);
 	font-size: var(--font-size-sm);
+	border-bottom: 1px solid var(--separator-color);
 }
 
 .nav-container {

@@ -86,14 +86,6 @@ body {
 	flex-direction: column;
 }
 
-.separator {
-	border-bottom: 1px solid var(--separator-color);
-}
-
-.separator-red {
-	border-bottom: 1px solid red;
-}
-
 .container {
 	max-width: var(--max-width);
 	margin-left: auto;
