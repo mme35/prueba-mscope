@@ -1,16 +1,20 @@
 .company-overview {
 	display: flex;
-	justify-content: center;
+	/* align-items: center; */
 }
 
 .description {
-	padding: 16px 0;
+	padding: 24px 36px 24px 0;
 	flex: 2;
+}
+
+.description h1 {
+	margin-bottom: 16px;
 }
 
 .description p {
 	color: var(--text-color-300);
-	font-weight: var(--text-weight-400);
+	font-weight: var(--font-weight-400);
 	font-size: var(--font-size-sm);
 	line-height: 18px;
 }
@@ -18,16 +22,17 @@
 .description-sector {
 	display: flex;
 	align-items: center;
-	gap: 8px;
+	gap: 12px;
 	margin-top: 16px;
 	color: var(--text-color-200);
 }
 
 .description-sector-left > p,
 .description-sector-right > p {
-	font-weight: var(--text-weight-400);
+	font-weight: var(--font-weight-400);
 	font-size: var(--font-size-xsm);
 	color: var(--text-color-200);
+	margin-bottom: 4px;
 }
 
 .sector-badge {
@@ -36,25 +41,27 @@
 	gap: 4px;
 	border-radius: 4px;
 	padding: 4px;
+	padding-right: 6px;
 	width: fit-content;
 	height: 26px;
 	background-color: #e2f0eb;
 }
 .sector-badge-label {
 	color: #209464;
-	font-weight: var(--text-weight-500);
+	font-size: var(--font-size-sm);
+	font-weight: var(--font-weight-500);
 	display: inline-block;
 }
 
 .description-sector-right > p {
-	padding-left: 8px;
+	padding-left: 12px;
 }
 
 .likes {
 	display: flex;
-	gap: 8px;
+	gap: 4px;
 	border-left: 1px solid var(--separator-color);
-	padding-left: 8px;
+	padding-left: 12px;
 }
 
 .like-btn {
@@ -82,9 +89,12 @@
 }
 
 .description-contact {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
 	margin-top: 16px;
 	color: var(--text-color-300);
-	font-weight: var(--text-weight-400);
+	font-weight: var(--font-weight-400);
 	font-size: var(--font-size-sm);
 }
 
@@ -95,25 +105,29 @@
 }
 
 .financials {
-	padding: 32px 16px;
+	padding: 36px 12px;
 	flex: 1;
 	border-left: 1px solid var(--separator-color);
+}
+
+.financials h2 {
+	margin-bottom: 16px;
 }
 
 .score {
 	display: flex;
 	flex-direction: column;
-	margin-top: 16px;
 }
 
 .score-grade {
 	font-size: 52px;
 	color: #209464;
 	line-height: 56px;
+	letter-spacing: 8px;
 }
 
 .score-label {
-	font-weight: var(--text-weight-400);
+	font-weight: var(--font-weight-400);
 	font-size: var(--font-size-xsm);
 	color: var(--text-color-200);
 }
@@ -121,13 +135,13 @@
 .financials-data {
 	margin-top: 16px;
 	display: flex;
-	gap: 32px;
+	gap: 60px;
 }
 
 .financials-data-column {
 	display: flex;
 	flex-direction: column;
-	gap: 8px;
+	gap: 16px;
 }
 
 .financials-data-item {
@@ -139,19 +153,27 @@
 .financials-data-value {
 	font-size: 22px;
 	color: var(--text-color-500);
-	font-weight: var(--text-weight-500);
-	line-height: 26px;
+	font-weight: var(--font-weight-500);
 }
 
 .financials-data-label {
-	font-size: var(--font-size-xsm);
+	font-size: 11px;
 	color: var(--text-color-200);
-	font-weight: var(--text-weight-400);
-	line-height: 15px;
+	font-weight: var(--font-weight-400);
 }
 
 .indicators {
-	padding: 32px 16px;
+	padding: 36px 0 36px 12px;
 	flex: 1;
 	border-left: 1px solid var(--separator-color);
+}
+
+.indicators-legend {
+	margin-top: 16px;
+}
+
+.indicators h2 {
+	width: 284px;
+	height: 15px;
+	margin-bottom: 24px;
 }

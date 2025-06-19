@@ -100,6 +100,9 @@ const CompanyOverview = () => {
 				<h2 className="header">mscope score indicators</h2>
 				<div>
 					<img src="./indicators.svg" />
+					<div className="indicators-legend">
+						<img src="./indicators-legend.svg" />
+					</div>
 				</div>
 			</div>
 		</div>

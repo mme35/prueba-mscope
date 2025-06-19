@@ -286,6 +286,7 @@ function App() {
 				<div className="container">
 					<Tabs tabList={tabList} defaultTab="financials" />
 				</div>
+				<div className="mt-40"></div>
 				<Collapsible title="Income Statement" defaultOpen={true}>
 					<div className="container">
 						<IncomeStatementGraphs />

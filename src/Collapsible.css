@@ -2,7 +2,7 @@
 	width: 100%;
 	display: flex;
 	align-items: center;
-	padding: 16px 0;
+	padding: 12px 0;
 	gap: 8px;
 	background: none;
 	border: none;
@@ -24,19 +24,13 @@
 	font-size: var(--font-size-lg);
 }
 
-.chevron-icon {
+.collapsible-icon {
 	width: 24px;
 	height: 24px;
 }
 
 .chevron-up {
 	transform: rotate(180deg);
-}
-
-.icon {
-	width: 20px;
-	height: 20px;
-	color: #666;
 }
 
 .collapsible-content {
@@ -56,5 +50,4 @@
 
 .collapsible-inner {
 	overflow: hidden;
-	padding: 16px 8px;
 }

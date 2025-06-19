@@ -1,6 +1,4 @@
 .app-header {
-	font-weight: var(--text-weight-400);
-	font-size: var(--font-size-sm);
 	border-bottom: 1px solid var(--separator-color);
 }
 
@@ -12,19 +10,19 @@
 
 .app-nav {
 	display: flex;
-	height: 52px;
+	height: 51px;
 }
 
 .app-nav > ul {
+	font-weight: var(--font-weight-400);
+	font-size: var(--font-size-sm);
 	display: flex;
-	justify-content: center;
-	align-items: center;
 	list-style: none;
-	gap: 8px;
+	align-items: center;
 }
 
 .logo-nav-item {
-	margin-right: 16px;
+	margin-right: 40px;
 }
 
 .logo-nav-item > a {
@@ -35,7 +33,12 @@
 
 .nav-item {
 	padding: 16px 0;
+	margin-right: 16px;
 	position: relative;
+}
+
+.nav-item:last-of-type {
+	margin-right: 0;
 }
 
 .nav-item-badge {
@@ -43,14 +46,28 @@
 	align-items: center;
 }
 
-.nav-item > a:hover {
-	font-weight: var(--text-weight-500);
+.nav-item:hover > a {
+	font-weight: var(--font-weight-500);
 }
 
 .nav-item:hover::after {
 	content: '';
 	position: absolute;
-	bottom: 0;
+	bottom: -1px;
+	left: 0;
+	right: 0;
+	height: 2px;
+	background-color: var(--color-red);
+}
+
+.nav-item.active {
+	font-weight: var(--font-weight-500);
+}
+
+.nav-item.active::after {
+	content: '';
+	position: absolute;
+	bottom: -1px;
 	left: 0;
 	right: 0;
 	height: 2px;
@@ -73,7 +90,7 @@
 .app-header-right {
 	display: flex;
 	align-items: center;
-	gap: 8px;
+	gap: 24px;
 }
 
 .search-container {
@@ -85,9 +102,11 @@
 .search-input {
 	width: 300px;
 	height: 34px;
+	border-radius: 4px;
 	padding: 12px 16px 12px 32px;
 	border: 1px solid #d1d5db;
-	font-size: var(--font-size-m);
+	font-size: var(--font-size-sm);
+	font-weight: var(--font-weight-400);
 	outline: none;
 }
 
@@ -118,7 +137,6 @@
 }
 
 .account {
-	margin-left: 16px;
 	display: flex;
 	align-items: center;
 	gap: 8px;
@@ -148,12 +166,13 @@
 	max-width: 120px;
 }
 
-.email {
-	font-size: var(--font-size-xsm);
-	overflow: hidden;
-	text-overflow: ellipsis;
+.organization-name > span {
+	font-weight: var(--font-weight-500);
 }
 
-.header {
-	margin-bottom: 16px;
+.email {
+	font-size: var(--font-size-xsm);
+	color: var(--text-color-300);
+	overflow: hidden;
+	text-overflow: ellipsis;
 }

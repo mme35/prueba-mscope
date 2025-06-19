@@ -21,7 +21,7 @@ export const Nav = () => {
 								<li className="nav-item">
 									<a href="#">Explorer</a>
 								</li>
-								<li className="nav-item">
+								<li className="nav-item active">
 									<a href="#">Companies</a>
 								</li>
 								<li className="nav-item">
@@ -50,7 +50,9 @@ export const Nav = () => {
 							<button className="account">
 								<div className="user-badge">GR</div>
 								<div className="account-info">
-									<div className="organization-name">Tresmares ES</div>
+									<div className="organization-name">
+										<span>Tresmares ES</span>
+									</div>
 									<div className="email">gonzalo.rubio@mscope.es</div>
 								</div>
 								<div>
