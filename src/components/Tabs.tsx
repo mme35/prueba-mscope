@@ -25,12 +25,7 @@ const Tabs: React.FC<TabsProps> = ({ tabList = [], defaultTab }) => {
 						key={tab.id}
 						className={`tab-button ${tab.disabled ? 'tab-button-disabled' : ''} ${i === activeTab ? 'tab-button-active' : ''}`}
 						disabled={tab.disabled}
-						onClick={() => {
-							if (!tab.disabled) {
-								console.log(`Tab ${tab.title} clicked`);
-							}
-							setActiveTab(i);
-						}}
+						onClick={() => setActiveTab(i)}
 					>
 						{tab.title}
 					</button>

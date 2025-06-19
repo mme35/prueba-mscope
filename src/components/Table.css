@@ -44,6 +44,10 @@
 	font-weight: var(--font-weight-500);
 }
 
+.table-header:last-child .table-cell:last-child {
+	padding-right: 0;
+}
+
 .table-cell {
 	padding: 16px 12px 16px 4px;
 	font-size: var(--font-size-xsm);

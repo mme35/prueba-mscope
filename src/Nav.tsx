@@ -21,7 +21,7 @@ export const Nav = () => {
 								<li className="nav-item">
 									<a href="#">Explorer</a>
 								</li>
-								<li className="nav-item active">
+								<li className="nav-item">
 									<a href="#">Companies</a>
 								</li>
 								<li className="nav-item">

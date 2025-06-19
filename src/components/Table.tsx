@@ -1,5 +1,6 @@
 import './Table.css';
-import DownloadIcon from './assets/download-01_16px.svg?react';
+import DownloadIcon from '../assets/download-01_16px.svg?react';
+
 interface TableHeader {
 	id: string;
 	label: string;

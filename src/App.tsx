@@ -1,11 +1,11 @@
 import './App.css';
 import Nav from './Nav';
-import Separator from './Separator';
+import Separator from './components/Separator';
 import CompanyOverview from './CompanyOverview';
-import Tabs from './Tabs';
-import Collapsible from './Collapsible';
+import Tabs from './components/Tabs';
+import Collapsible from './components/Collapsible';
 import IncomeStatementGraphs from './IncomeStatementGraphs';
-import Table from './Table';
+import Table from './components/Table';
 
 const headers = [
 	{ id: 'metric', label: 'Income Statement (€M)' },
@@ -298,15 +298,11 @@ function App() {
 				</Collapsible>
 				<Separator />
 				<Collapsible title="Balance Sheet">
-					<div className="container">
-						<p>Placeholder content</p>
-					</div>
+					<div className="container"></div>
 				</Collapsible>
 				<Separator />
 				<Collapsible title="Cashflow">
-					<div className="container">
-						<p>Placeholder content</p>
-					</div>
+					<div className="container"></div>
 				</Collapsible>
 				<Separator />
 			</main>

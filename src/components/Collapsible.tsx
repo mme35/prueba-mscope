@@ -1,5 +1,5 @@
 import { useState, type ReactNode } from 'react';
-import Chevron from './assets/chevron-down_24px.svg?react';
+import Chevron from '../assets/chevron-down_24px.svg?react';
 import './Collapsible.css';
 
 interface CollapsibleProps {
@@ -9,7 +9,7 @@ interface CollapsibleProps {
 	className?: string;
 }
 
-const Collapsible = ({ title, children, defaultOpen = false, className = '' }: CollapsibleProps) => {
+const Collapsible: React.FC<CollapsibleProps> = ({ title, children, defaultOpen = false, className = '' }) => {
 	const [isOpen, setIsOpen] = useState(defaultOpen);
 
 	const toggleOpen = () => {
