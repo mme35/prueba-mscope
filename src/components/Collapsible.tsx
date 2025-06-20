@@ -1,13 +1,7 @@
-import { useState, type ReactNode } from 'react';
+import { useState } from 'react';
 import Chevron from '../assets/chevron-down_24px.svg?react';
 import './Collapsible.css';
-
-interface CollapsibleProps {
-	title: string;
-	children: ReactNode;
-	defaultOpen?: boolean;
-	className?: string;
-}
+import type { CollapsibleProps } from './Collapsible.types';
 
 const Collapsible: React.FC<CollapsibleProps> = ({ title, children, defaultOpen = false, className = '' }) => {
 	const [isOpen, setIsOpen] = useState(defaultOpen);

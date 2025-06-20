@@ -1,16 +1,6 @@
 import { useState } from 'react';
 import './Tabs.css';
-
-interface Tab {
-	id: string;
-	title: string;
-	disabled?: boolean;
-}
-
-interface TabsProps {
-	tabList: Tab[];
-	defaultTab?: string;
-}
+import type { TabsProps } from './Tabs.types';
 
 const Tabs: React.FC<TabsProps> = ({ tabList = [], defaultTab }) => {
 	const foundDefaultTabIndex = tabList.findIndex(tab => tab.id === defaultTab);

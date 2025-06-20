@@ -1,22 +1,6 @@
 import './Table.css';
 import DownloadIcon from '../assets/download-01_16px.svg?react';
-
-interface TableHeader {
-	id: string;
-	label: string;
-}
-
-interface TableRowContent {
-	value: string;
-	className?: string;
-}
-
-type TableRow = Record<string, TableRowContent>;
-
-interface TableProps {
-	headers: TableHeader[];
-	rows: TableRow[];
-}
+import type { TableProps } from './Table.types';
 
 const Table: React.FC<TableProps> = ({ headers, rows = [] }) => {
 	return (
