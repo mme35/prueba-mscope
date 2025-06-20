@@ -1,10 +1,10 @@
 import './CompanyOverview.css';
-import ArrowUp from '/src/assets/arrow-narrow-up_16px.svg?react';
-import ThumbsUp from '/src/assets/thumbs-up_16px.svg?react';
-import Asterisk from '/src/assets/asterisk.svg?react';
-import Marker from '/src/assets/marker-pin-04_16px.svg?react';
-import Calendar from '/src/assets/calendar_16px.svg?react';
-import Link from '/src/assets/link-01_16px.svg?react';
+import ArrowUp from './assets/arrow-narrow-up_16px.svg?react';
+import ThumbsUp from './assets/thumbs-up_16px.svg?react';
+import Asterisk from './assets/asterisk.svg?react';
+import Marker from './assets/marker-pin-04_16px.svg?react';
+import Calendar from './assets/calendar_16px.svg?react';
+import Link from './assets/link-01_16px.svg?react';
 
 const CompanyOverview = () => {
 	return (

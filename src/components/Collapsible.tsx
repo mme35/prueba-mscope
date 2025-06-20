@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Chevron from '/src/assets/chevron-down_24px.svg?react';
+import Chevron from '../assets/chevron-down_24px.svg?react';
 import './Collapsible.css';
 import type { CollapsibleProps } from './Collapsible.types';
 

@@ -1,5 +1,5 @@
 import './Table.css';
-import DownloadIcon from '/src/assets/download-01_16px.svg?react';
+import DownloadIcon from '../assets/download-01_16px.svg?react';
 import type { TableProps } from './Table.types';
 
 const Table: React.FC<TableProps> = ({ headers, rows = [] }) => {
