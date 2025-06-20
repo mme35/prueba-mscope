@@ -1,6 +1,6 @@
 import './Nav.css';
-import SearchIcon from './assets/search-lg_16px.svg?react';
-import Chevrons from './assets/chevrons.svg?react';
+import SearchIcon from '/src/assets/search-lg_16px.svg?react';
+import Chevrons from '/src/assets/chevrons.svg?react';
 
 export const Nav = () => {
 	return (
